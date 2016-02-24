@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execution order</title>
+<script type="text/javascript" src="jslibs/jquery-1.12.1.js"></script>
+<script type="text/javascript">
+
+
+window.onload=function(){
+	alert("onload-1 called");
+}
+window.onload=function(){
+	alert("onload-2 called");
+}
+
+$(function(){
+	alert("Ready-2 called")
+});
+
+$(function(){
+	alert("Ready-1 called")
+});
+
+</script>
+</head>
+<body>
+<h1>jquery examples</h1>
+<h3 id="detail">Ajax calls</h3>
+<ul>
+<li>UML</li>
+<li>OOAD</li>
+<li>RDBMS</li>
+<li>JAVA</li>
+<li>ANT &amp;Log4j</li>
+<li>Design Patterns</li>
+
+</ul>
+</body>
+</html>
